@@ -1,0 +1,40 @@
+.partner {
+    @include padBlock(100px);
+
+    .partner-title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .partner-text {
+        font-size: 18px;
+        color: $colorGrey;
+        line-height: 140%;
+        text-align: center;
+    }
+
+    .partner-wrapper {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+
+        .partner-card {
+            padding: 20px;
+            color: $colorDarkBlue;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px #f3f2f2;
+        }
+    }
+
+    .partner-content {
+        margin-top: 40px;
+    }
+
+    .btn-center {
+        display: grid;
+        place-items: center;
+        margin-top: 60px;
+    }
+}

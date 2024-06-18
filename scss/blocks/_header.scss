@@ -1,0 +1,52 @@
+.header {
+
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 50px;
+
+        .menu-link {
+            color: $colorGrey;
+
+            &:hover {
+                color: $colorBlue;
+            }
+        }
+    }
+
+    .header-btn {
+        padding: 14px;
+        border: 1px solid $colorLightGrey;
+        border-radius: $border;
+        color: $colorBlue;
+        transition: .3s;
+
+        &:hover {
+            background-color: $colorBlue;
+            color: $colorLightGrey;
+        }
+    }
+}
+
+@keyframes linemenu {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

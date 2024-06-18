@@ -1,0 +1,40 @@
+.start {
+
+    @include padBlock(100px);
+
+    .start-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .start-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .start-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .start-line {
+        display: flex;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .start-box {
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: $colorGrey;
+            line-height: 135%;
+            margin-top: 12px;
+        }
+    }
+}

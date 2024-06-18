@@ -1,0 +1,45 @@
+$colorGrey: #72727E;
+$colorBlue: #446DF6;
+$colorDarkBlue: #141B41;
+$colorLightGrey: #E9ECF5;
+
+$desktop: 1200px;
+$laptop: 992px;
+$tablet: 768px;
+$mobile: 576px;
+
+$border: 6px;
+
+
+@mixin adaptivDesktop() {
+    @media(width < 1200px) {
+        @content
+    }
+};
+
+@mixin adaptiveLaptop() {
+    @media(width < 992px) {
+        @content
+    }
+};
+
+@mixin adaptiveTablet() {
+    @media(width < 768px) {
+        @content
+    }
+};
+
+@mixin adaptiveMobile() {
+    @media(width < 576px) {
+        @content
+    }
+};
+
+@mixin padBlock ($pad) {
+    padding-block: $pad;
+};
+
+@mixin fontStyle($fz, $fw) {
+    font-size: $fz;
+    font-weight: $fw;
+};
