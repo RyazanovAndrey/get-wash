@@ -15,13 +15,52 @@
 
     .menu {
         display: flex;
-        gap: 50px;
+        gap: 30px;
 
-        .menu-link {
-            color: $colorGrey;
+        .menu-item {
+            position: relative;
 
-            &:hover {
-                color: $colorBlue;
+            &:hover .menu-drop {
+                
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .menu-link {
+                color: $colorGrey;
+                font-weight: 500;
+                transition: .3s;
+                display: block;
+                padding: 15px;
+    
+                &:hover {
+                    color: $colorBlue;
+                }
+            }
+
+            .menu-drop {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                width: 300px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px #e9e7e7;
+                padding: 15px;
+                opacity: 0;
+                visibility: hidden;
+                transition: .4s;
+
+                .drop-link {
+                    display: block;
+                    padding: 15px;
+                    color: black;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $colorBlue;
+                    }
+                }
             }
         }
     }

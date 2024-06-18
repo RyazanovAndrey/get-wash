@@ -14,16 +14,64 @@
                 <div class="header-logo"><img src="img/logo-header.svg" alt=""></div>
                 <nav>
                     <ul class="menu">
-                        <li><a href="" class="menu-link">Як використовувати</a></li>
-                        <li><a href="#" class="menu-link">Партнерам</a></li>
-                        <li><a href="#" class="menu-link">Завантажити</a></li>
-                        <li><a href="#" class="menu-link">Відгуки</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Як використовувати</a></li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Партнерам</a>
+                            <ul class="menu-drop">
+                                <li><a href="#" class="drop-link">Як стати нашим парнером</a></li>
+                                <li><a href="#" class="drop-link">Відсотки по ставкам</a></li>
+                                <li><a href="#" class="drop-link">Де можно підписати угоду</a></li>
+                                <li><a href="#" class="drop-link">Важлива инфо</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#" class="menu-link">Завантажити</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Відгуки</a></li>
                     </ul>
                 </nav>
                 <button class="header-btn">Отримати доступ</button>
             </div>
         </div>
     </header>
+
+    <div class="popup">
+        <div class="popup-body">
+            <div class="close-btn">&times;</div>
+            <div class="popup-title">Стань нашим партнером і почни заробляти:</div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <img src="./img/input-ico-1.svg" alt="">
+                    <input type="text" placeholder="Введіть ім'я">
+                </div>
+                <span class="error">Поле не може бути пустим!</span>
+            </div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <img src="./img/input-ico-2.svg" alt="">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <span class="error">Неправильний формат пошти!</span>
+            </div>
+            <div class="input-wrapper">
+                <div class="input-box">
+                    <img src="./img/input-ico-3.svg" alt="">
+                    <input type="tel" placeholder="Номер телефона">
+                </div>
+                <span class="error"></span>
+            </div>
+            <label>
+                <input type="checkbox" class="check-true">
+                <span></span>
+                <p>Я хочу отримувати новини на поштову адресу</p>
+            </label>
+            <label>
+                <input type="checkbox" class="check-true">
+                <span></span>
+                <p>Я згоден брати участь у зборі даних</p>
+            </label>
+            <button type="submit" class="btn">Отримати доступ</button>
+        </div>
+    </div>
+
     <main>
         <section class="home">
             <div class="container">
