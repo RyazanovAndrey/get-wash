@@ -1,6 +1,6 @@
 .reviews {
 
-    @include padBlock (100px);
+    @include padBlock (150px);
 
     .reviews-wrapper {
         display: grid;
@@ -9,7 +9,6 @@
     }
 
     .reviews-card {
-        border: 1px solid #000;
 
         img {
             border-radius: 100%;
@@ -46,3 +45,32 @@
     }
 }
 
+.swiper {
+    overflow: hidden;
+    width: 700px;
+}
+
+.swiper .swiper-wrapper {
+    display: inline-flex;
+}
+
+.btns-slider {
+    display: flex;
+    gap: 10px;
+}
+
+.reviews-btn {
+    background-image: url(../../img/reviews-arrow-default.svg);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-image: url(../../img/reviews-arrow-hover.svg);
+    }
+}
+
+.reviews-btn:last-child {
+    rotate: 180deg;
+}

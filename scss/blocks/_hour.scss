@@ -1,5 +1,7 @@
 .hour {
 
+    @include padBlock(100px);
+
     .hour-banner {
         position: relative;
 

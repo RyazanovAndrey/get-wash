@@ -1,0 +1,28 @@
+.footer {
+
+    background-color: $colorDarkBlue;
+    @include padBlock(25px);
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-footer {
+        display: flex;
+        gap: 30px;
+    }
+
+    .footer-link {
+        color: #fff;
+    }
+
+    .footer-btn {
+        display: block;
+        padding: 12px;
+        color: #F7F8FD;
+        border: 1px solid $colorGrey;
+        border-radius: 6px;
+    }
+}

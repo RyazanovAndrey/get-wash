@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header class="header hidden">
+    <header class="header">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-logo"><img src="img/logo-header.svg" alt=""></div>
@@ -25,7 +25,7 @@
         </div>
     </header>
     <main>
-        <section class="home hidden">
+        <section class="home">
             <div class="container">
                 <div class="home-wrapper">
                     <div class="home-left">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section class="start hidden">
+        <section class="start">
             <div class="container">
                 <div class="start-wrapper">
                     <div class="start-left">
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section class="partner hidden">
+        <section class="partner">
             <div class="container">
                 <h3 class="partner-title">Стань нашим партнером і почни заробляти:</h3>
                 <p class="partner-text">Автоматизуй свій бізнес разом із нами. Підключися до нашої системи бронювання, щоб отримувати нових клієнтів і розподілити навантаження рівномірно на весь день. Ми надаємо зручні інструменти для формування звітів у кілька кліків та багато іншого.</p>
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <section class="hour hidden">
+        <section class="hour">
             <div class="container">
                 <div class="hour-banner">
                     <img src="./img/partner-main.png" alt="">
@@ -134,27 +134,80 @@
                 <h3 class="reviews-title">Відгуки про програму</h3>
                 <div class="reviews-wrapper">
                     <div class="reviews-left">
-                        <div class="reviews-card">
-                            <p class="reviews-text">
-                                Таким чином, консультація з широким активом тягне за собою процес впровадження та модернізації напрямів прогресивного розвитку. Різноманітний і багатий досвід структура організації, що склалася, забезпечує широкому колу (фахівців).
-                                участь у формуванні моделі розвитку.
-                            </p>
-                            <div class="reviews-content">
-                                <img src="./img/reviews.jpg" alt="reviews-photo">
-                                <div class="reviews-box">
-                                    <div class="reviews-name">John Doe</div>
-                                    <div class="reviews-job">Водитель</div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="reviews-card">
+                                        <p class="reviews-text">
+                                            Таким чином, консультація з широким активом тягне за собою процес впровадження та модернізації напрямів прогресивного розвитку. Різноманітний і багатий досвід структура організації, що склалася, забезпечує широкому колу (фахівців).
+                                            участь у формуванні моделі розвитку.
+                                        </p>
+                                        <div class="reviews-content">
+                                            <img src="./img/reviews.jpg" alt="reviews-photo">
+                                            <div class="reviews-box">
+                                                <div class="reviews-name">John Doe</div>
+                                                <div class="reviews-job">Водитель</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews-card">
+                                        <p class="reviews-text">
+                                            Таким чином, консультація з широким активом тягне за собою процес впровадження та модернізації напрямів прогресивного розвитку. Різноманітний і багатий досвід структура організації, що склалася, забезпечує широкому колу (фахівців).
+                                            участь у формуванні моделі розвитку.
+                                        </p>
+                                        <div class="reviews-content">
+                                            <img src="./img/reviews.jpg" alt="reviews-photo">
+                                            <div class="reviews-box">
+                                                <div class="reviews-name">John Doe</div>
+                                                <div class="reviews-job">Водитель</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews-card">
+                                        <p class="reviews-text">
+                                            Таким чином, консультація з широким активом тягне за собою процес впровадження та модернізації напрямів прогресивного розвитку. Різноманітний і багатий досвід структура організації, що склалася, забезпечує широкому колу (фахівців).
+                                            участь у формуванні моделі розвитку.
+                                        </p>
+                                        <div class="reviews-content">
+                                            <img src="./img/reviews.jpg" alt="reviews-photo">
+                                            <div class="reviews-box">
+                                                <div class="reviews-name">John Doe</div>
+                                                <div class="reviews-job">Водитель</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="reviews-right">
-                        123
+                        <div class="btns-slider">
+                            <div class="reviews-btn swiper-button-prev"></div>
+                            <div class="reviews-btn swiper-button-next"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <img src="./img/logo-footer.svg" alt="">
+                <ul class="menu-footer">
+                    <li><a href="#" class="footer-link">Як використовувати</a></li>
+                    <li><a href="#" class="footer-link">Партнерам</a></li>
+                    <li><a href="#" class="footer-link">Завантажити</a></li>
+                    <li><a href="#" class="footer-link">Відгуки</a></li>
+                </ul>
+                <a href="#" class="footer-btn">Отримати доступ</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

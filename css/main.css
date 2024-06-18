@@ -280,6 +280,9 @@ body {
   margin-top: 60px;
 }
 
+.hour {
+  padding-block: 100px;
+}
 .hour .hour-banner {
   position: relative;
 }
@@ -300,15 +303,12 @@ body {
 }
 
 .reviews {
-  padding-block: 100px;
+  padding-block: 150px;
 }
 .reviews .reviews-wrapper {
   display: grid;
   grid-template-columns: 1fr 120px;
   gap: 340px;
-}
-.reviews .reviews-card {
-  border: 1px solid #000;
 }
 .reviews .reviews-card img {
   border-radius: 100%;
@@ -336,6 +336,59 @@ body {
   padding-bottom: 20px;
   margin-bottom: 40px;
   border-bottom: 1px solid #e5e6e9;
+}
+
+.swiper {
+  overflow: hidden;
+  width: 700px;
+}
+
+.swiper .swiper-wrapper {
+  display: inline-flex;
+}
+
+.btns-slider {
+  display: flex;
+  gap: 10px;
+}
+
+.reviews-btn {
+  background-image: url(../../img/reviews-arrow-default.svg);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reviews-btn:hover {
+  background-image: url(../../img/reviews-arrow-hover.svg);
+}
+
+.reviews-btn:last-child {
+  rotate: 180deg;
+}
+
+.footer {
+  background-color: #141B41;
+  padding-block: 25px;
+}
+.footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .menu-footer {
+  display: flex;
+  gap: 30px;
+}
+.footer .footer-link {
+  color: #fff;
+}
+.footer .footer-btn {
+  display: block;
+  padding: 12px;
+  color: #F7F8FD;
+  border: 1px solid #72727E;
+  border-radius: 6px;
 }
 
 .hidden {
