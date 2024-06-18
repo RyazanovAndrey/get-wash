@@ -224,9 +224,28 @@ body {
   z-index: 99;
 }
 .popup .popup-body {
+  position: relative;
   background-color: #fff;
   width: 480px;
   padding: 80px 30px;
+}
+.popup .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #72727E;
+}
+.popup .popup-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.popup .input-box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 60px;
 }
 
 .home {
