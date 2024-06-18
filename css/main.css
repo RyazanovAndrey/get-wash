@@ -182,7 +182,7 @@ body {
   }
 }
 .home {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .home .home-wrapper {
   display: flex;
@@ -230,6 +230,8 @@ body {
 .start .start-line {
   display: flex;
   gap: 30px;
+}
+.start .start-line:nth-child(n+2) {
   margin-top: 40px;
 }
 .start .start-box h4 {
@@ -267,6 +269,7 @@ body {
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 10px 20px #f3f2f2;
+  flex: 1;
 }
 .partner .partner-content {
   margin-top: 40px;
@@ -275,6 +278,64 @@ body {
   display: grid;
   place-items: center;
   margin-top: 60px;
+}
+
+.hour .hour-banner {
+  position: relative;
+}
+.hour .hour-banner .hour-wrapper {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  width: 490px;
+}
+.hour .hour-banner .hour-wrapper .hour-title {
+  font-size: 40px;
+  color: #F7F8FD;
+}
+.hour .hour-banner .hour-wrapper .hour-text {
+  font-size: 18px;
+  color: #E9ECF5;
+  margin: 17px 0 45px;
+}
+
+.reviews {
+  padding-block: 100px;
+}
+.reviews .reviews-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 340px;
+}
+.reviews .reviews-card {
+  border: 1px solid #000;
+}
+.reviews .reviews-card img {
+  border-radius: 100%;
+}
+.reviews .reviews-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.reviews .reviews-name {
+  font-size: 24px;
+}
+.reviews .reviews-job {
+  font-size: 18px;
+  color: #72727E;
+}
+.reviews .reviews-title {
+  font-size: 30px;
+  color: #141B41;
+  margin-bottom: 30px;
+}
+.reviews .reviews-text {
+  font-size: 18px;
+  color: #72727E;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e5e6e9;
 }
 
 .hidden {

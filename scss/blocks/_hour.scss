@@ -1,0 +1,25 @@
+.hour {
+
+    .hour-banner {
+        position: relative;
+
+        .hour-wrapper {
+            position: absolute;
+            top: 120px;
+            left: 70px;
+            width: 490px;
+
+            .hour-title {
+                font-size: 40px;
+                color: #F7F8FD;
+            }
+
+            .hour-text {
+                font-size: 18px;
+                color: #E9ECF5;
+                margin: 17px 0 45px;
+            }
+        }
+    }
+
+}

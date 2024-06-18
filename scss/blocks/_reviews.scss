@@ -1,0 +1,48 @@
+.reviews {
+
+    @include padBlock (100px);
+
+    .reviews-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 120px;
+        gap: 340px;
+    }
+
+    .reviews-card {
+        border: 1px solid #000;
+
+        img {
+            border-radius: 100%;
+        }
+    }
+
+    .reviews-content {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .reviews-name {
+        font-size: 24px;
+    }
+
+    .reviews-job {
+        font-size: 18px;
+        color: $colorGrey;
+    }
+
+    .reviews-title {
+        font-size: 30px;
+        color: $colorDarkBlue;
+        margin-bottom: 30px;
+    }
+
+    .reviews-text {
+        font-size: 18px;
+        color: $colorGrey;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #e5e6e9;
+    }
+}
+

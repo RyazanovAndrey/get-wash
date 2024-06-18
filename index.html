@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header hidden">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-logo"><img src="img/logo-header.svg" alt=""></div>
@@ -25,7 +25,7 @@
         </div>
     </header>
     <main>
-        <section class="home">
+        <section class="home hidden">
             <div class="container">
                 <div class="home-wrapper">
                     <div class="home-left">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section class="start">
+        <section class="start hidden">
             <div class="container">
                 <div class="start-wrapper">
                     <div class="start-left">
@@ -49,39 +49,41 @@
                     </div>
                     <div class="start-right">
                         <h3 class="start-title">Швидкий старт:</h3>
-                        <div class="start-line">
-                            <img src="./img/start-ico-1.svg" alt="">
-                            <div class="start-box">
-                                <h4>Скачай та зареєструйся</h4>
-                                <p>Наша програма доступна в Apple Store і Google Play</p>
+                        <div>
+                            <div class="start-line">
+                                <img src="./img/start-ico-1.svg" alt="">
+                                <div class="start-box">
+                                    <h4>Скачай та зареєструйся</h4>
+                                    <p>Наша програма доступна в Apple Store і Google Play</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="start-line">
-                            <img src="./img/start-ico-2.svg" alt="">
-                            <div class="start-box">
-                                <h4>Вибери найближчу автомийку</h4>
-                                <p>З вільних поблизу або залиш замовлення на зручний час</p>
+                            <div class="start-line">
+                                <img src="./img/start-ico-2.svg" alt="">
+                                <div class="start-box">
+                                    <h4>Вибери найближчу автомийку</h4>
+                                    <p>З вільних поблизу або залиш замовлення на зручний час</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="start-line">
-                            <img src="./img/start-ico-3.svg" alt="">
-                            <div class="start-box">
-                                <h4>Вибери додаткові послуги</h4>
-                                <p>Можеш їх додати до свого основного замовлення</p>
+                            <div class="start-line">
+                                <img src="./img/start-ico-3.svg" alt="">
+                                <div class="start-box">
+                                    <h4>Вибери додаткові послуги</h4>
+                                    <p>Можеш їх додати до свого основного замовлення</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="start-line">
-                            <img src="./img/start-ico-4.svg" alt="">
-                            <div class="start-box">
-                                <h4>Оплати всередині програми</h4>
-                                <p>Безконтактна оплата всередині програми та прозорі ціни</p>
+                            <div class="start-line">
+                                <img src="./img/start-ico-4.svg" alt="">
+                                <div class="start-box">
+                                    <h4>Оплати всередині програми</h4>
+                                    <p>Безконтактна оплата всередині програми та прозорі ціни</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="partner">
+        <section class="partner hidden">
             <div class="container">
                 <h3 class="partner-title">Стань нашим партнером і почни заробляти:</h3>
                 <p class="partner-text">Автоматизуй свій бізнес разом із нами. Підключися до нашої системи бронювання, щоб отримувати нових клієнтів і розподілити навантаження рівномірно на весь день. Ми надаємо зручні інструменти для формування звітів у кілька кліків та багато іншого.</p>
@@ -112,9 +114,49 @@
                 </div>
             </div>
         </section>
+        <section class="hour hidden">
+            <div class="container">
+                <div class="hour-banner">
+                    <img src="./img/partner-main.png" alt="">
+                    <div class="hour-wrapper">
+                        <div class="hour-title">Досить витрачати своє час у чергах</div>
+                        <p class="hour-text">Додаток скоро буде доступний для бета тестування в AppStore та Google Play</p>
+                        <div class="hour-icon">
+                            <a href=""><img src="./img/app-store.svg" alt=""></a>
+                            <a href=""><img src="./img/google-store.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h3 class="reviews-title">Відгуки про програму</h3>
+                <div class="reviews-wrapper">
+                    <div class="reviews-left">
+                        <div class="reviews-card">
+                            <p class="reviews-text">
+                                Таким чином, консультація з широким активом тягне за собою процес впровадження та модернізації напрямів прогресивного розвитку. Різноманітний і багатий досвід структура організації, що склалася, забезпечує широкому колу (фахівців).
+                                участь у формуванні моделі розвитку.
+                            </p>
+                            <div class="reviews-content">
+                                <img src="./img/reviews.jpg" alt="reviews-photo">
+                                <div class="reviews-box">
+                                    <div class="reviews-name">John Doe</div>
+                                    <div class="reviews-job">Водитель</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-right">
+                        123
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
