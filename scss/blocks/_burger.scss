@@ -2,14 +2,19 @@
 
     font-size: 30px;
     display: none;
+    padding: 20px;
+    display: none;
 
     @include desktop {
         display: block;
+        border-left: 1px solid #ebebeb;
     }
 
     .fa-solid {
         display: block;
         color: $colorGrey;
+        width: 30px;
+        height: 30px;
     }
 
     .burger-true,

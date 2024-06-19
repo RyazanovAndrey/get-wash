@@ -9,13 +9,13 @@
     background-color: #fff;
     z-index: 99;
 
-    .menu-nav {
-        @include desktop {
-            display: none;
-        }
-    }
-
     .header-wrapper {
+
+        @include desktop {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,56 +23,88 @@
         margin-bottom: 25px;
     }
 
-    .menu {
-        display: flex;
-        gap: 30px;
+    .menu-nav {
 
-        .menu-item {
-            position: relative;
+        @include desktop {
+            position: absolute;
+            background-color: #fff;
+            top: 101%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            font-size: 20px;
+            transition: .3s;
+            opacity: 0;
+        }
 
-            &:hover .menu-drop {
-                
-                opacity: 1;
-                visibility: visible;
+        &.open {
+            opacity: 1;
+        }
+
+        .menu {
+
+            display: flex;
+            gap: 30px;
+
+            @include desktop {
+                flex-direction: column;
+                gap: 0;
             }
 
-            .menu-link {
-                color: $colorGrey;
-                font-weight: 500;
-                transition: .3s;
-                display: block;
-                padding: 15px;
-
-                &.active-link {
-                    color: $colorBlue;
+            .menu-item {
+                position: relative;
+    
+                &:hover .menu-drop {
+                    
+                    opacity: 1;
+                    visibility: visible;
                 }
     
-                &:hover {
-                    color: $colorBlue;
-                }
-            }
+                .menu-link {
 
-            .menu-drop {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background-color: #fff;
-                width: 300px;
-                border-radius: 20px;
-                box-shadow: 0 0 20px #e9e7e7;
-                padding: 15px;
-                opacity: 0;
-                visibility: hidden;
-                transition: .4s;
+                    @include desktop {
+                        border-bottom: 1px solid #ebebeb;
+                        text-align: center;
+                        padding: 25px;
+                    }
 
-                .drop-link {
+                    color: $colorGrey;
+                    font-weight: 500;
+                    transition: .3s;
                     display: block;
                     padding: 15px;
-                    color: black;
-                    transition: .3s;
-
+    
+                    &.active-link {
+                        color: $colorBlue;
+                    }
+        
                     &:hover {
                         color: $colorBlue;
+                    }
+                }
+    
+                .menu-drop {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #fff;
+                    width: 300px;
+                    border-radius: 20px;
+                    box-shadow: 0 0 20px #e9e7e7;
+                    padding: 15px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .4s;
+    
+                    .drop-link {
+                        display: block;
+                        padding: 15px;
+                        color: black;
+                        transition: .3s;
+    
+                        &:hover {
+                            color: $colorBlue;
+                        }
                     }
                 }
             }
@@ -99,5 +131,41 @@
 }
 
 .menu-item:first-child {
+    display: none;
+}
+
+.btn-mobile-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mobile-1 {
+
+    @include desktop {
+        display: block;
+    }
+
+    padding: 15px 20px;
+    background-color: $colorBlue;
+    border-radius: 6px;
+    color: #E9ECF5;
+    font-size: 18px;
+    margin-top: 30px;
+    display: none;
+}
+
+.btn-mobile-2 {
+
+    @include desktop {
+        display: block;
+    }
+
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    color: $colorBlue;
+    border: 1px solid $colorBlue;
+    margin-top: 10px;
+    font-size: 18px;
     display: none;
 }

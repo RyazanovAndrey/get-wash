@@ -5,6 +5,19 @@ let closeBtn = document.querySelector('.close-btn')
 let btnTop  = document.querySelector('.btn-top ')
 let section = document.querySelectorAll('section')
 
+let burgerBtn = document.querySelector('.burger-true')
+
+// Burger
+
+burgerBtn.addEventListener('click', () => {
+
+  if(burgerBtn.checked){
+    document.querySelector('.menu-nav').classList.add('open')
+  }else {
+    document.querySelector('.menu-nav').classList.remove('open')
+  }
+})
+
 let margBody = window.innerWidth - document.documentElement.clientWidth + 'px'
 
 window.addEventListener('scroll', () => {

@@ -157,15 +157,20 @@ html {
 .burger {
   font-size: 30px;
   display: none;
+  padding: 20px;
+  display: none;
 }
 @media (width < 1200px) {
   .burger {
     display: block;
+    border-left: 1px solid #ebebeb;
   }
 }
 .burger .fa-solid {
   display: block;
   color: #72727E;
+  width: 30px;
+  height: 30px;
 }
 .burger .burger-true,
 .burger .burger-close {
@@ -189,11 +194,6 @@ html {
     border-bottom: 1px solid #E9ECF5;
   }
 }
-@media (width < 1200px) {
-  .header .menu-nav {
-    display: none;
-  }
-}
 .header .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -201,31 +201,66 @@ html {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.header .menu {
+@media (width < 1200px) {
+  .header .header-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (width < 1200px) {
+  .header .menu-nav {
+    position: absolute;
+    background-color: #fff;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    transition: 0.3s;
+    opacity: 0;
+  }
+}
+.header .menu-nav.open {
+  opacity: 1;
+}
+.header .menu-nav .menu {
   display: flex;
   gap: 30px;
 }
-.header .menu .menu-item {
+@media (width < 1200px) {
+  .header .menu-nav .menu {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.header .menu-nav .menu .menu-item {
   position: relative;
 }
-.header .menu .menu-item:hover .menu-drop {
+.header .menu-nav .menu .menu-item:hover .menu-drop {
   opacity: 1;
   visibility: visible;
 }
-.header .menu .menu-item .menu-link {
+.header .menu-nav .menu .menu-item .menu-link {
   color: #72727E;
   font-weight: 500;
   transition: 0.3s;
   display: block;
   padding: 15px;
 }
-.header .menu .menu-item .menu-link.active-link {
+@media (width < 1200px) {
+  .header .menu-nav .menu .menu-item .menu-link {
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    padding: 25px;
+  }
+}
+.header .menu-nav .menu .menu-item .menu-link.active-link {
   color: #446DF6;
 }
-.header .menu .menu-item .menu-link:hover {
+.header .menu-nav .menu .menu-item .menu-link:hover {
   color: #446DF6;
 }
-.header .menu .menu-item .menu-drop {
+.header .menu-nav .menu .menu-item .menu-drop {
   position: absolute;
   top: 100%;
   left: 0;
@@ -238,13 +273,13 @@ html {
   visibility: hidden;
   transition: 0.4s;
 }
-.header .menu .menu-item .menu-drop .drop-link {
+.header .menu-nav .menu .menu-item .menu-drop .drop-link {
   display: block;
   padding: 15px;
   color: black;
   transition: 0.3s;
 }
-.header .menu .menu-item .menu-drop .drop-link:hover {
+.header .menu-nav .menu .menu-item .menu-drop .drop-link:hover {
   color: #446DF6;
 }
 .header .header-btn {
@@ -266,6 +301,42 @@ html {
 
 .menu-item:first-child {
   display: none;
+}
+
+.btn-mobile-group {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-mobile-1 {
+  padding: 15px 20px;
+  background-color: #446DF6;
+  border-radius: 6px;
+  color: #E9ECF5;
+  font-size: 18px;
+  margin-top: 30px;
+  display: none;
+}
+@media (width < 1200px) {
+  .btn-mobile-1 {
+    display: block;
+  }
+}
+
+.btn-mobile-2 {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  color: #446DF6;
+  border: 1px solid #446DF6;
+  margin-top: 10px;
+  font-size: 18px;
+  display: none;
+}
+@media (width < 1200px) {
+  .btn-mobile-2 {
+    display: block;
+  }
 }
 
 .popup {
