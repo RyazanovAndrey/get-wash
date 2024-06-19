@@ -30,9 +30,66 @@
     }
 
     .input-box {
-        border: 1px solid #000;
+        border: 1px solid #E9ECF5;
+        display: flex;
+        gap: 20px;
         border-radius: 10px;
-        height: 60px;
+        margin-top: 20px;
+
+        input {
+            &::placeholder {
+                color: #C0C0C0;
+            }
+        }
+
     }
 
+    .error {
+        color: tomato;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .ico-wrapper {
+        border-right: 1px solid #E9ECF5;
+        padding: 20px;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+        .check-true {
+            display: none;
+        }
+
+        .check-true:checked + span::after {
+            display: block;
+        }
+
+        span {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            display: block;
+            border: 1px solid #E9ECF5;
+            border-radius: 6px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 13px;
+                height: 11px;
+                background-image: url(../../img/check.svg);
+                background-repeat: no-repeat;
+                display: block;
+                top: calc(50% - 4px);
+                left: calc(50% - 6px);
+                display: none;
+            }
+        }
+    }
 }

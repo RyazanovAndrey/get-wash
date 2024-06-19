@@ -243,9 +243,59 @@ body {
   margin-bottom: 75px;
 }
 .popup .input-box {
-  border: 1px solid #000;
+  border: 1px solid #E9ECF5;
+  display: flex;
+  gap: 20px;
   border-radius: 10px;
-  height: 60px;
+  margin-top: 20px;
+}
+.popup .input-box input::-moz-placeholder {
+  color: #C0C0C0;
+}
+.popup .input-box input::placeholder {
+  color: #C0C0C0;
+}
+.popup .error {
+  color: tomato;
+  margin-top: 10px;
+  display: block;
+}
+.popup .ico-wrapper {
+  border-right: 1px solid #E9ECF5;
+  padding: 20px;
+}
+.popup .check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.popup .check .check-true {
+  display: none;
+}
+.popup .check .check-true:checked + span::after {
+  display: block;
+}
+.popup .check span {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: block;
+  border: 1px solid #E9ECF5;
+  border-radius: 6px;
+}
+.popup .check span::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 11px;
+  background-image: url(../../img/check.svg);
+  background-repeat: no-repeat;
+  display: block;
+  top: calc(50% - 4px);
+  left: calc(50% - 6px);
+  display: none;
 }
 
 .home {
