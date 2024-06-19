@@ -93,6 +93,10 @@ body {
   font-family: "Montserrat";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -136,6 +140,20 @@ body {
   color: #446DF6;
 }
 
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.btn-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -166,6 +184,9 @@ body {
   transition: 0.3s;
   display: block;
   padding: 15px;
+}
+.header .menu .menu-item .menu-link.active-link {
+  color: #446DF6;
 }
 .header .menu .menu-item .menu-link:hover {
   color: #446DF6;
@@ -204,50 +225,59 @@ body {
   color: #E9ECF5;
 }
 
-@keyframes linemenu {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.menu-item:first-child {
+  display: none;
 }
+
 .popup {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   z-index: 99;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
 }
 .popup .popup-body {
   position: relative;
   background-color: #fff;
   width: 480px;
-  padding: 80px 30px;
+  padding: 40px 30px;
 }
 .popup .close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  right: 10px;
   font-size: 40px;
   cursor: pointer;
   color: #72727E;
 }
 .popup .popup-title {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 }
 .popup .input-box {
   border: 1px solid #E9ECF5;
   display: flex;
   gap: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 20px;
+}
+.popup .input-box.error-line {
+  border: 2px solid tomato;
+}
+.popup .input-box.valid-line {
+  border: 2px solid green;
 }
 .popup .input-box input::-moz-placeholder {
   color: #C0C0C0;
@@ -262,14 +292,17 @@ body {
 }
 .popup .ico-wrapper {
   border-right: 1px solid #E9ECF5;
-  padding: 20px;
+  padding: 10px;
 }
 .popup .check {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.popup .check p {
+  font-size: 14px;
 }
 .popup .check .check-true {
   display: none;
@@ -296,6 +329,13 @@ body {
   top: calc(50% - 4px);
   left: calc(50% - 6px);
   display: none;
+}
+.popup .btn-form {
+  width: 100%;
+}
+
+.stop-scroll {
+  overflow: hidden;
 }
 
 .home {

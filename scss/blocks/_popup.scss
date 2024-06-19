@@ -2,39 +2,57 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
     z-index: 99;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
 
     .popup-body {
         position: relative;
         background-color: #fff;
         width: 480px;
-        padding: 80px 30px;
+        padding: 40px 30px;
     }
 
     .close-btn {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 5px;
+        right: 10px;
         font-size: 40px;
         cursor: pointer;
         color: $colorGrey;
     }
 
     .popup-title {
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
-        margin-bottom: 75px;
+        margin-bottom: 40px;
     }
 
     .input-box {
         border: 1px solid #E9ECF5;
         display: flex;
         gap: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-top: 20px;
+
+        &.error-line {
+            border: 2px solid  tomato;
+        }
+
+        &.valid-line {
+            border: 2px solid green;
+        }
 
         input {
             &::placeholder {
@@ -52,7 +70,7 @@
 
     .ico-wrapper {
         border-right: 1px solid #E9ECF5;
-        padding: 20px;
+        padding: 10px;
     }
 
     .check {
@@ -60,7 +78,11 @@
         align-items: center;
         gap: 5px;
         margin-bottom: 10px;
-        margin-top: 20px;
+        margin-top: 10px;
+
+        p {
+            font-size: 14px;
+        }
 
         .check-true {
             display: none;
@@ -92,4 +114,12 @@
             }
         }
     }
+
+    .btn-form {
+        width: 100%;;
+    }
+}
+
+.stop-scroll {
+    overflow: hidden;
 }

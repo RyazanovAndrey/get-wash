@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: $desktop;
     margin: 0 auto;
@@ -39,5 +43,20 @@ body {
         background-color: #fff;
         border: 1px solid $colorBlue;
         color: $colorBlue;
+    }
+}
+
+.btn-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
     }
 }

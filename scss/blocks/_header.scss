@@ -32,6 +32,10 @@
                 transition: .3s;
                 display: block;
                 padding: 15px;
+
+                &.active-link {
+                    color: $colorBlue;
+                }
     
                 &:hover {
                     color: $colorBlue;
@@ -79,13 +83,6 @@
     }
 }
 
-@keyframes linemenu {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.menu-item:first-child {
+    display: none;
 }

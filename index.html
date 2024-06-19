@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/img/ico.svg" type="image/x-icon">
+    <title>Пошук найближчої вільної автомийки</title>
 </head>
 <body>
 
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <div class="header-logo"><img src="img/logo-header.svg" alt=""></div>
+                <a href="#" class="header-logo"><img src="img/logo-header.svg" alt=""></a>
                 <nav>
                     <ul class="menu">
-                        <li class="menu-item"><a href="" class="menu-link">Як використовувати</a></li>
+                        <li class="menu-item"><a href="#home" class="menu-link active-link">Головна</a></li>
+                        <li class="menu-item"><a href="#start" class="menu-link">Як використовувати</a></li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Партнерам</a>
+                            <a href="#partner" class="menu-link">Партнерам</a>
                             <ul class="menu-drop">
                                 <li><a href="#" class="drop-link">Як стати нашим парнером</a></li>
                                 <li><a href="#" class="drop-link">Відсотки по ставкам</a></li>
@@ -24,14 +26,18 @@
                                 <li><a href="#" class="drop-link">Важлива инфо</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="#" class="menu-link">Завантажити</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Відгуки</a></li>
+                        <li class="menu-item"><a href="#down" class="menu-link">Завантажити</a></li>
+                        <li class="menu-item"><a href="#reviews" class="menu-link">Відгуки</a></li>
                     </ul>
                 </nav>
                 <button class="header-btn">Отримати доступ</button>
             </div>
         </div>
     </header>
+
+    <div class="btn-top">
+        <a href="#"><img src="img/arrow-top.svg" alt=""></a>
+    </div>
 
     <div class="popup">
         <div class="popup-body">
@@ -41,23 +47,23 @@
                     <div class="ico-wrapper">
                         <img src="./img/input-ico-1.svg" alt="">
                     </div>
-                    <input type="text" placeholder="Введіть ім'я">
+                    <input type="text" placeholder="Введіть ім'я" class="input-field" name="nameuser">
                 </div>
-                <span class="error">Поле не може бути пустим!</span>
+                <span class="error"></span>
                 <div class="input-box">
                     <div class="ico-wrapper">
                         <img src="./img/input-ico-2.svg" alt="">
                     </div>
-                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="E-mail" class="input-field" name="emailuser">
                 </div>
-                <span class="error">Поле не може бути пустим!</span>
+                <span class="error"></span>
                 <div class="input-box">
                     <div class="ico-wrapper">
                         <img src="./img/input-ico-3.svg" alt="">
                     </div>
-                    <input type="text" placeholder="Номер телефона">
+                    <input type="tel" placeholder="Номер телефона" class="input-field" name="phoneuser">
                 </div>
-                <span class="error">Поле не може бути пустим!</span>
+                <span class="error"></span>
             <label class="check">
                 <input type="checkbox" class="check-true">
                 <span></span>
@@ -68,12 +74,12 @@
                 <span></span>
                 <p>Я згоден брати участь у зборі даних</p>
             </label>
-            <button type="submit" class="btn">Отримати доступ</button>
+            <button type="submit" class="btn btn-form">Отримати доступ</button>
         </div>
     </div>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="container">
                 <div class="home-wrapper">
                     <div class="home-left">
@@ -89,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section class="start">
+        <section class="start" id="start">
             <div class="container">
                 <div class="start-wrapper">
                     <div class="start-left">
@@ -131,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="partner">
+        <section class="partner" id="partner">
             <div class="container">
                 <h3 class="partner-title">Стань нашим партнером і почни заробляти:</h3>
                 <p class="partner-text">Автоматизуй свій бізнес разом із нами. Підключися до нашої системи бронювання, щоб отримувати нових клієнтів і розподілити навантаження рівномірно на весь день. Ми надаємо зручні інструменти для формування звітів у кілька кліків та багато іншого.</p>
@@ -158,11 +164,11 @@
                     </div>
                 </div>
                 <div class="btn-center">
-                    <a href="#" class="partner-btn btn">Стати партнером</a>
+                    <a href="#!" class="partner-btn btn">Стати партнером</a>
                 </div>
             </div>
         </section>
-        <section class="hour">
+        <section class="hour" id="down">
             <div class="container">
                 <div class="hour-banner">
                     <img src="./img/partner-main.png" alt="">
@@ -177,7 +183,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h3 class="reviews-title">Відгуки про програму</h3>
                 <div class="reviews-wrapper">
