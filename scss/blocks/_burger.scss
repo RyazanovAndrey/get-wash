@@ -1,24 +1,20 @@
 .burger {
 
-    display: flex;
+    font-size: 30px;
+    display: none;
 
     @include desktop {
         display: block;
     }
 
-    display: none;
-
-    .burger-true {
-        opacity: 0;
-    }
-
     .fa-solid {
-        font-size: 30px;
+        display: block;
         color: $colorGrey;
-        cursor: pointer;
     }
 
-    .burger-close {
+    .burger-true,
+    .burger-close
+    {
         display: none;
     }
 
@@ -26,7 +22,8 @@
         display: none;
     }
 
-    .burger-true:checked ~ .burger-close{
+    .burger-true:checked ~ .burger-close {
         display: block;
     }
+
 }

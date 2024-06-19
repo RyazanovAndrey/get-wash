@@ -155,7 +155,7 @@ html {
 }
 
 .burger {
-  display: flex;
+  font-size: 30px;
   display: none;
 }
 @media (width < 1200px) {
@@ -163,14 +163,11 @@ html {
     display: block;
   }
 }
-.burger .burger-true {
-  opacity: 0;
-}
 .burger .fa-solid {
-  font-size: 30px;
+  display: block;
   color: #72727E;
-  cursor: pointer;
 }
+.burger .burger-true,
 .burger .burger-close {
   display: none;
 }
@@ -186,6 +183,11 @@ html {
   width: 100%;
   background-color: #fff;
   z-index: 99;
+}
+@media (width < 1200px) {
+  .header {
+    border-bottom: 1px solid #E9ECF5;
+  }
 }
 @media (width < 1200px) {
   .header .menu-nav {

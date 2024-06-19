@@ -1,5 +1,9 @@
 .header {
 
+    @include desktop {
+        border-bottom: 1px solid #E9ECF5;
+    }
+
     position: fixed;
     width: 100%;
     background-color: #fff;
