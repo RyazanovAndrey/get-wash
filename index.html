@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/img/ico.svg" type="image/x-icon">
     <title>Пошук найближчої вільної автомийки</title>
@@ -13,7 +14,12 @@
         <div class="container">
             <div class="header-wrapper">
                 <a href="#" class="header-logo"><img src="img/logo-header.svg" alt=""></a>
-                <nav>
+                <div class="burger">
+                    <input type="checkbox" class="burger-true">
+                    <i class="fa-solid fa-bars burger-line"></i>
+                    <i class="fa-solid fa-xmark burger-close"></i>
+                </div>
+                <nav class="menu-nav">
                     <ul class="menu">
                         <li class="menu-item"><a href="#home" class="menu-link active-link">Головна</a></li>
                         <li class="menu-item"><a href="#start" class="menu-link">Як використовувати</a></li>
@@ -79,7 +85,7 @@
     </div>
 
     <main>
-        <section class="home" id="home">
+        <section class="home hidden" id="home">
             <div class="container">
                 <div class="home-wrapper">
                     <div class="home-left">
@@ -95,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="start" id="start">
+        <section class="start hidden" id="start">
             <div class="container">
                 <div class="start-wrapper">
                     <div class="start-left">
@@ -137,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="partner" id="partner">
+        <section class="partner hidden" id="partner">
             <div class="container">
                 <h3 class="partner-title">Стань нашим партнером і почни заробляти:</h3>
                 <p class="partner-text">Автоматизуй свій бізнес разом із нами. Підключися до нашої системи бронювання, щоб отримувати нових клієнтів і розподілити навантаження рівномірно на весь день. Ми надаємо зручні інструменти для формування звітів у кілька кліків та багато іншого.</p>
@@ -168,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="hour" id="down">
+        <section class="hour hidden" id="down">
             <div class="container">
                 <div class="hour-banner">
                     <img src="./img/partner-main.png" alt="">
@@ -183,7 +189,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews" id="reviews">
+        <section class="reviews hidden" id="reviews">
             <div class="container">
                 <h3 class="reviews-title">Відгуки про програму</h3>
                 <div class="reviews-wrapper">
@@ -248,7 +254,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="container">
             <div class="footer-wrapper">
                 <img src="./img/logo-footer.svg" alt="">

@@ -1,0 +1,32 @@
+.burger {
+
+    display: flex;
+
+    @include desktop {
+        display: block;
+    }
+
+    display: none;
+
+    .burger-true {
+        opacity: 0;
+    }
+
+    .fa-solid {
+        font-size: 30px;
+        color: $colorGrey;
+        cursor: pointer;
+    }
+
+    .burger-close {
+        display: none;
+    }
+
+    .burger-true:checked + .burger-line {
+        display: none;
+    }
+
+    .burger-true:checked ~ .burger-close{
+        display: block;
+    }
+}

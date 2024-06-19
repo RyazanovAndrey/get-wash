@@ -5,6 +5,12 @@
     background-color: #fff;
     z-index: 99;
 
+    .menu-nav {
+        @include desktop {
+            display: none;
+        }
+    }
+
     .header-wrapper {
         display: flex;
         justify-content: space-between;
@@ -70,6 +76,11 @@
     }
 
     .header-btn {
+
+        @include desktop {
+            display: none;
+        }
+
         padding: 14px;
         border: 1px solid $colorLightGrey;
         border-radius: $border;

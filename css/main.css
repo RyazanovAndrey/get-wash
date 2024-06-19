@@ -154,11 +154,43 @@ html {
   visibility: visible;
 }
 
+.burger {
+  display: flex;
+  display: none;
+}
+@media (width < 1200px) {
+  .burger {
+    display: block;
+  }
+}
+.burger .burger-true {
+  opacity: 0;
+}
+.burger .fa-solid {
+  font-size: 30px;
+  color: #72727E;
+  cursor: pointer;
+}
+.burger .burger-close {
+  display: none;
+}
+.burger .burger-true:checked + .burger-line {
+  display: none;
+}
+.burger .burger-true:checked ~ .burger-close {
+  display: block;
+}
+
 .header {
   position: fixed;
   width: 100%;
   background-color: #fff;
   z-index: 99;
+}
+@media (width < 1200px) {
+  .header .menu-nav {
+    display: none;
+  }
 }
 .header .header-wrapper {
   display: flex;
@@ -219,6 +251,11 @@ html {
   border-radius: 6px;
   color: #446DF6;
   transition: 0.3s;
+}
+@media (width < 1200px) {
+  .header .header-btn {
+    display: none;
+  }
 }
 .header .header-btn:hover {
   background-color: #446DF6;

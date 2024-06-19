@@ -11,25 +11,25 @@ $mobile: 576px;
 $border: 6px;
 
 
-@mixin adaptivDesktop() {
+@mixin desktop() {
     @media(width < 1200px) {
         @content
     }
 };
 
-@mixin adaptiveLaptop() {
+@mixin laptop() {
     @media(width < 992px) {
         @content
     }
 };
 
-@mixin adaptiveTablet() {
+@mixin tablet() {
     @media(width < 768px) {
         @content
     }
 };
 
-@mixin adaptiveMobile() {
+@mixin mobile() {
     @media(width < 576px) {
         @content
     }

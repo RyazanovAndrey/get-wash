@@ -11,19 +11,19 @@ html {
     margin: 0 auto;
     padding-inline: 15px;
 
-    @include adaptivDesktop {
+    @include desktop {
         max-width: 992px;
     }
 
-    @include adaptiveLaptop {
+    @include laptop {
         max-width: 768px;
     }
 
-    @include adaptiveTablet {
+    @include tablet {
         max-width: 576px;
     }
 
-    @include adaptiveMobile {
+    @include mobile {
         max-width: 90%;
     }
 }
