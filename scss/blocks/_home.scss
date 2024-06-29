@@ -3,7 +3,13 @@
     padding-top: 100px;
 
     .home-wrapper {
+
+        @include laptop {
+            flex-direction: column;
+        }
+
         display: flex;
+        align-items: center;
         gap: 105px;
     }
 

@@ -218,10 +218,12 @@ html {
     font-size: 20px;
     transition: 0.3s;
     opacity: 0;
+    visibility: hidden;
   }
 }
 .header .menu-nav.open {
   opacity: 1;
+  visibility: visible;
 }
 .header .menu-nav .menu {
   display: flex;
@@ -453,7 +455,13 @@ html {
 }
 .home .home-wrapper {
   display: flex;
+  align-items: center;
   gap: 105px;
+}
+@media (width < 992px) {
+  .home .home-wrapper {
+    flex-direction: column;
+  }
 }
 .home-content {
   margin-top: 150px;
@@ -484,6 +492,11 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+}
+@media (width < 992px) {
+  .start .start-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .start .start-right {
   display: flex;
@@ -529,6 +542,11 @@ html {
   margin-top: 40px;
   display: flex;
   gap: 30px;
+}
+@media (width < 992px) {
+  .partner .partner-wrapper {
+    flex-direction: column;
+  }
 }
 .partner .partner-wrapper .partner-card {
   padding: 20px;
